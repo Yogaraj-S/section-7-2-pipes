@@ -10,9 +10,8 @@ export class TasksListComponent implements OnInit {
 
   @Input() tasks: Task;
   @Output() getSelectedTaskFromList: EventEmitter<any> = new EventEmitter();
-  
   constructor() { }
-
+  filterValue = '';
   ngOnInit() {
   }
 

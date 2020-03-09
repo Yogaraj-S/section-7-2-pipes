@@ -5,5 +5,6 @@ export interface Task {
     assignee: String,
     status: String,
     priority: String,
-    details: String
+    details: String,
+    creationDate: Date
 }

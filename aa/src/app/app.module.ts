@@ -9,6 +9,7 @@ import { TaskDetailComponent } from './home/task-detail/task-detail.component';
 import { TasksListComponent } from './home/tasks-list/tasks-list.component';
 import { TaskCardComponent } from './home/tasks-list/task-card/task-card.component';
 import { HighlightDirective } from './directives/highlight.directive';
+import { FilterPipe } from './pipes/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HighlightDirective } from './directives/highlight.directive';
     TaskDetailComponent,
     TasksListComponent,
     TaskCardComponent,
-    HighlightDirective
+    HighlightDirective,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

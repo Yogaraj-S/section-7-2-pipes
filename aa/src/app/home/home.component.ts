@@ -7,7 +7,6 @@ import { Task } from './task';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
   // We get the below data from API
   tasksList: Task[] = [
     {
@@ -17,7 +16,8 @@ export class HomeComponent implements OnInit {
       assignee: 'Siddharth',
       status: 'Active',
       priority: 'high',
-      details: 'You have to create a parent and child component in angular 8.'
+      details: 'You have to create a parent and child component in angular 8.',
+      creationDate: new Date(11, 2, 2020)
     },
     {
       id: 2,
@@ -26,7 +26,8 @@ export class HomeComponent implements OnInit {
       assignee: 'Ponvel',
       status: 'Active',
       priority: 'low',
-      details: 'You have to create and use a directive without template in angular 8.'
+      details: 'You have to create and use a directive without template in angular 8.',
+      creationDate: new Date(11, 2, 2020)
     },
     {
       id: 3,
@@ -35,7 +36,8 @@ export class HomeComponent implements OnInit {
       assignee: 'Yogi',
       status: 'Closed',
       priority: 'low',
-      details: 'To design a side Nav as requested by the designer with proper standards.'
+      details: 'To design a side Nav as requested by the designer with proper standards.',
+      creationDate: new Date(11, 2, 2020)
     },
     {
       id: 4,
@@ -44,7 +46,8 @@ export class HomeComponent implements OnInit {
       assignee: 'Yogi',
       status: 'Active',
       priority: 'low',
-      details: 'To organize a tech talk by inviting presenter and people from other companies.'
+      details: 'To organize a tech talk by inviting presenter and people from other companies.',
+      creationDate: new Date(11, 2, 2020)
     },
     {
       id: 5,
@@ -53,7 +56,8 @@ export class HomeComponent implements OnInit {
       assignee: 'Siddharth',
       status: 'Active',
       priority: 'low',
-      details: 'Send a meeting invite to people from Techie Blasters for the team lunch.'
+      details: 'Send a meeting invite to people from Techie Blasters for the team lunch.',
+      creationDate: new Date(11, 2, 2020)
     }
   ];
 
